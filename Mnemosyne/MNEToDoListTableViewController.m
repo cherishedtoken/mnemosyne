@@ -7,12 +7,27 @@
 //
 
 #import "MNEToDoListTableViewController.h"
+#import "MNEToDoItem.h"
 
 @interface MNEToDoListTableViewController ()
+
+@property NSMutableArray *toDoItems;
 
 @end
 
 @implementation MNEToDoListTableViewController
+
+- (void) loadInitialData {
+    MNEToDoItem *item1 = [[MNEToDoItem alloc] init];
+    item1.itemName = @"Brush your teeth";
+    [self.toDoItems addObject:item1];
+    MNEToDoItem *item2 = [[MNEToDoItem alloc] init];
+    item2.itemName = @"Grab lunch with Mika";
+    [self.toDoItems addObject:item2];
+    MNEToDoItem *item3 = [[MNEToDoItem alloc] init];
+    item3.itemName = @"Finish reading all of your books";
+    [self.toDoItems addObject:item3];
+}
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
@@ -31,6 +46,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.toDoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -49,28 +66,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.toDoItems count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    static NSString *CellIdentifier = @"ListPrototypeCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    MNEToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = toDoItem.itemName;
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
