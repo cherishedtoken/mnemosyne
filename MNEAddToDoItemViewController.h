@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MNEToDoItem.h"
 
 @interface MNEAddToDoItemViewController : UIViewController
+
+@property MNEToDoItem *toDoItem;
 
 @end
