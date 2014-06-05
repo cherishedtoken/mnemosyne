@@ -20,6 +20,8 @@
 		CDBF247F1940164400F27B0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF247D1940164400F27B0A /* InfoPlist.strings */; };
 		CDBF24811940164400F27B0A /* MnemosyneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF24801940164400F27B0A /* MnemosyneTests.m */; };
 		CDBF248B194018E900F27B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBF248A194018E900F27B0A /* Main.storyboard */; };
+		CDBF248E19402E4300F27B0A /* MNEAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF248D19402E4300F27B0A /* MNEAddToDoItemViewController.m */; };
+		CDBF249119402F0700F27B0A /* MNEToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF249019402F0700F27B0A /* MNEToDoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		CDBF247E1940164400F27B0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDBF24801940164400F27B0A /* MnemosyneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemosyneTests.m; sourceTree = "<group>"; };
 		CDBF248A194018E900F27B0A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CDBF248C19402E4300F27B0A /* MNEAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNEAddToDoItemViewController.h; sourceTree = "<group>"; };
+		CDBF248D19402E4300F27B0A /* MNEAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEAddToDoItemViewController.m; sourceTree = "<group>"; };
+		CDBF248F19402F0700F27B0A /* MNEToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNEToDoListTableViewController.h; sourceTree = "<group>"; };
+		CDBF249019402F0700F27B0A /* MNEToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNEToDoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		CDBF244F1940164300F27B0A = {
 			isa = PBXGroup;
 			children = (
+				CDBF248C19402E4300F27B0A /* MNEAddToDoItemViewController.h */,
+				CDBF248D19402E4300F27B0A /* MNEAddToDoItemViewController.m */,
 				CDBF24611940164400F27B0A /* Mnemosyne */,
 				CDBF247A1940164400F27B0A /* MnemosyneTests */,
 				CDBF245A1940164400F27B0A /* Frameworks */,
@@ -112,6 +120,8 @@
 				CDBF246A1940164400F27B0A /* MNEAppDelegate.h */,
 				CDBF246B1940164400F27B0A /* MNEAppDelegate.m */,
 				CDBF248A194018E900F27B0A /* Main.storyboard */,
+				CDBF248F19402F0700F27B0A /* MNEToDoListTableViewController.h */,
+				CDBF249019402F0700F27B0A /* MNEToDoListTableViewController.m */,
 				CDBF246D1940164400F27B0A /* Images.xcassets */,
 				CDBF24621940164400F27B0A /* Supporting Files */,
 			);
@@ -244,8 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBF249119402F0700F27B0A /* MNEToDoListTableViewController.m in Sources */,
 				CDBF24681940164400F27B0A /* main.m in Sources */,
 				CDBF246C1940164400F27B0A /* MNEAppDelegate.m in Sources */,
+				CDBF248E19402E4300F27B0A /* MNEAddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
