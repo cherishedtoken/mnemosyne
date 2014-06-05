@@ -19,6 +19,7 @@
 		CDBF24771940164400F27B0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBF245F1940164400F27B0A /* UIKit.framework */; };
 		CDBF247F1940164400F27B0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDBF247D1940164400F27B0A /* InfoPlist.strings */; };
 		CDBF24811940164400F27B0A /* MnemosyneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBF24801940164400F27B0A /* MnemosyneTests.m */; };
+		CDBF248B194018E900F27B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBF248A194018E900F27B0A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CDBF247C1940164400F27B0A /* MnemosyneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MnemosyneTests-Info.plist"; sourceTree = "<group>"; };
 		CDBF247E1940164400F27B0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDBF24801940164400F27B0A /* MnemosyneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemosyneTests.m; sourceTree = "<group>"; };
+		CDBF248A194018E900F27B0A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				CDBF246A1940164400F27B0A /* MNEAppDelegate.h */,
 				CDBF246B1940164400F27B0A /* MNEAppDelegate.m */,
+				CDBF248A194018E900F27B0A /* Main.storyboard */,
 				CDBF246D1940164400F27B0A /* Images.xcassets */,
 				CDBF24621940164400F27B0A /* Supporting Files */,
 			);
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDBF248B194018E900F27B0A /* Main.storyboard in Resources */,
 				CDBF24661940164400F27B0A /* InfoPlist.strings in Resources */,
 				CDBF246E1940164400F27B0A /* Images.xcassets in Resources */,
 			);
